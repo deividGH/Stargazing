@@ -1,11 +1,21 @@
 import React from "react";
 import rana from "./img/ranafinal.jpg";
 
-const Formulario = ({usuario, validacion, setValidacion}) => {
+const Formulario = ({usuario, validacion, setUsuario, setValidacion}) => {
+
+  const validar = (e) => {
+
+    e.preventDefault()
+    
+    console.log("Entra a la función")
+    setValidacion(true)
+    
+  };
+
   return (
     <div className="wrapper">
       <div className="contenedorform">
-        <form className="formulario">
+        <form onSubmit={validar} className="formulario">
           <legend className="legend">Bienvenido</legend>
           <div className="campo">
             <label className="label">Usuario</label>

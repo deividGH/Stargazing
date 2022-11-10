@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Formulario from "./Formulario";
-
+import Instrucciones from "./Instrucciones";
 
 function App() {
   const [usuario, setUsuario] = useState("");
@@ -9,11 +9,16 @@ function App() {
   return (
     <div>
       <div>
-        <Formulario>
-          usuario = {usuario}
-          validacion = {validacion}
-          setValidacion = {setValidacion}
-        </Formulario>
+        {validacion ? (
+          <Instrucciones />
+        ) : (
+          <Formulario
+            usuario={usuario}
+            setUsuario={setUsuario}
+            validacion={validacion}
+            setValidacion={setValidacion}
+          />
+        )}
       </div>
     </div>
   );
