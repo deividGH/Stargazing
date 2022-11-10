@@ -5,6 +5,8 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
+  background-image: url(img/background.jpg);
+  background-size: 100%;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -32,8 +34,6 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-image: url(img/background.jpg);
-  background-size: 100%;
 }
 
 h1 {
@@ -58,6 +58,10 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.wrapper{
+  display: flex;
 }
 
 .rana img{
@@ -93,9 +97,6 @@ button:focus-visible {
   margin-bottom: 1rem;
 }
 
-.wrapper{
-  display: flex;
-}
 
 
 .legend{
@@ -130,15 +131,23 @@ button:focus-visible {
 
 
 
-@media (prefers-color-scheme: light) {
+@media (max-width: 700px) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    background-image: url(img/background.jpg);
+    background-size: 500%;
   }
-  a:hover {
-    color: #747bff;
+
+  .wrapper{
+    display: grid;
   }
-  button {
-    background-color: #f9f9f9;
+
+  .contenedorform{
+    margin : auto;
   }
+
+  .formulario{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
 }
