@@ -16,20 +16,20 @@ const Formulario = ({usuario, validacion, setUsuario, setValidacion}) => {
     <div className="wrapper">
       <div className="contenedorform">
         <form onSubmit={validar} className="formulario">
-          <legend className="legend">Bienvenido</legend>
+          <legend className="legend">Welcome</legend>
           <div className="campo">
-            <label className="label">Usuario</label>
-            <input type="text" placeholder="Escribe tu usuario" required />
+            <label className="label">Username</label>
+            <input type="text" placeholder="Enter your user name" required />
           </div>
           <div className="campo">
-            <label className="label">Contraseña</label>
+            <label className="label">Password</label>
             <input
               type="password"
-              placeholder="Escribe tu contraseña"
+              placeholder="Enter your password"
               required
             />
           </div>
-          <input type="submit" value="INGRESAR" />
+          <input type="submit" value="LOG IN" />
         </form>
       </div>
 
