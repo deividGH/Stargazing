@@ -211,7 +211,12 @@ h1 {
   /* border: 5px solid darkblue; */
   display: flex;
   align-items: flex-start;
-  flex-flow: column;
+  flex-direction: column;
+  align-items: center;
+}
+
+.font16{
+  font-size: 16px;
 }
 
 .estructura{
@@ -226,6 +231,7 @@ h1 {
   color: #1a1a1a;
   font-size: 30px;
   border-radius: 15px;
+  padding: 15px;
   /* border: 5px solid darkblue; */
 }
 
