@@ -1,10 +1,12 @@
 import React from "react";
 import rana from "./img/ranafinal.jpg";
 
-const Modales = () => {
+const Modales = ({setValidacion3, setValidacion2}) => {
 
   const alform = () =>{
-    window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSemNMPDqaihac6HKzLW_HbCeFBqqtt0E-cLD7_xVUzYnfgX-A/viewform?usp=sf_link'
+    setValidacion3(true)
+    setValidacion2(false)
+    
   }
   return (
     <center>
