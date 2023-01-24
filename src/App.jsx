@@ -11,6 +11,7 @@ function App() {
   const [validacion3, setValidacion3] = useState(false);
   const [validacion4, setValidacion4] = useState(false);
 
+
   //PREGUNTAS
   const [p1, setP1] = useState(0);
   const [p2, setP2] = useState(0);
@@ -37,7 +38,12 @@ function App() {
         />
       );
     } else if (validacion2) {
-      return <Modales setValidacion3={setValidacion3} setValidacion2 = {setValidacion2}/>;
+      return (
+        <Modales
+          setValidacion3={setValidacion3}
+          setValidacion2={setValidacion2}
+        />
+      );
     } else if (validacion3) {
       return (
         <Preguntas
@@ -76,11 +82,16 @@ function App() {
 
       console.log("No pasa nada aun");
     } else {
-      return <Formulario setValidacion={setValidacion} />;
+      return (
+        <Formulario
+          setValidacion={setValidacion}
+        />
+      );
     }
   };
 
   return <>{validador()}</>;
+  /* return <Preguntas/> */
 }
 
 export default App;

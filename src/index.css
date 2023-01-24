@@ -305,7 +305,12 @@ h1 {
 }
 
 .contenedor2{
-  margin:auto;
+  margin-left: 200px;
+  margin-right: 200px;
+  background-color: rgb(55, 2, 124);
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 @media (max-width: 700px) {
@@ -327,5 +332,8 @@ h1 {
     margin-bottom: 50px;
   }
 
+  .formulario2{
+
+  }
 
 }

@@ -1,15 +1,12 @@
 import React from "react";
 import rana from "./img/ranafinal.jpg";
 
-const Formulario = ({usuario, validacion, setUsuario, setValidacion}) => {
-
+const Formulario = ({ setValidacion }) => {
   const validar = (e) => {
+    e.preventDefault();
 
-    e.preventDefault()
-    
-    console.log("Entra a la función")
-    setValidacion(true)
-    
+    console.log("Entra a la función");
+    setValidacion(true);
   };
 
   return (
@@ -23,11 +20,7 @@ const Formulario = ({usuario, validacion, setUsuario, setValidacion}) => {
           </div>
           <div className="campo">
             <label className="label">Password</label>
-            <input
-              type="password"
-              placeholder="Enter your password"
-              required
-            />
+            <input type="password" placeholder="Enter your password" required />
           </div>
           <input type="submit" value="LOG IN" />
         </form>

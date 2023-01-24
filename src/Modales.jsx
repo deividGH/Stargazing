@@ -6,7 +6,7 @@ const Modales = ({setValidacion3, setValidacion2}) => {
   const alform = () =>{
     setValidacion3(true)
     setValidacion2(false)
-    
+    window.scrollTo(0,0)
   }
   return (
     <center>
