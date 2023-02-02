@@ -16,10 +16,7 @@ const Listening = ({setValidacion5, setValidacion6}) => {
           <div>
             <fieldset>
               <legend>Listen to the next audio and answer the questions</legend>
-              <audio id="my-audio" controls>
-                <source src="../audios/Audio1.mp3" type="audio/mp3"></source>
-                <p>Su navegador no soporta el elemento audio</p>
-              </audio>
+              <a href="https://drive.google.com/file/d/1vSh9r9krEwpbXHSNerS2PD8LSDrSwsV2/view?usp=share_link" target="_blank">Click here to hear the audio</a>
               <p>What did the boy say in the candy store?</p>
               <textarea name="" id="" cols="50" rows="2"></textarea>
               <p>How many dollars did the boy have?</p>
@@ -38,10 +35,7 @@ const Listening = ({setValidacion5, setValidacion6}) => {
           <div>
             <fieldset>
               <legend>Listen to the next audio and answer the questions</legend>
-              <audio id="my-audio" controls>
-                <source src="../audios/Audio2.mp3" type="audio/mp3"></source>
-                <p>Su navegador no soporta el elemento audio</p>
-              </audio>
+              <a href="https://drive.google.com/file/d/1jQdXSeZs6Zkn3uICZ725uMvo8VIei8-u/view?usp=share_link" target="_blank">Click here to hear the audio</a>
               <p>What did dan do after leaving school?</p>
               <textarea name="" id="" cols="50" rows="2"></textarea>
               <p>What job has a better salary than the library</p>
@@ -57,10 +51,7 @@ const Listening = ({setValidacion5, setValidacion6}) => {
           <div>
             <fieldset>
               <legend>Listen to the next audio and answer the questions</legend>
-              <audio id="my-audio" controls>
-                <source src="../audios/Audio3.mp3" type="audio/mp3"></source>
-                <p>Su navegador no soporta el elemento audio</p>
-              </audio>
+              <a href="https://drive.google.com/file/d/1Yk_pSjQqQaHm9EUH_gyBRdDU_yU72pwM/view?usp=share_link" target="_blank">Click here to hear the audio</a>
               <p>Where did the family go on vacation?</p>
               <textarea name="" id="" cols="50" rows="2"></textarea>
               <p>Who did the family meet upon arrival at their destination?</p>
